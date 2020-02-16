@@ -8,7 +8,7 @@ node('master') {
         printMessage('Running Pipeline')
 
         stage("Testing") {
-            sh 'python test_functions.py'
+            sh '/usr/bin/python test_functions.py'
         }
 
         printMessage('Pipeline Complete')
